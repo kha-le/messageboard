@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'messageboard',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: 'https://messageboardwithcli.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

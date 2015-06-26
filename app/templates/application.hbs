@@ -1,7 +1,10 @@
-<div class="header">
-  {{#link-to 'home'}}Home{{/link-to}}
-  {{#link-to 'messages'}}Messages{{/link-to}}
+<div class="container">
+  <nav class="navbar navbar-default" role="navigation">
+    <ul class="nav navbar-nav">
+    <li>{{#link-to 'home'}}Home{{/link-to}}</li>
+      <li>{{#link-to 'messages'}}Messages{{/link-to}}</li>
+    </ul>
+  </nav>
+
+  {{outlet}}
 </div>
-
-
-{{outlet}}
