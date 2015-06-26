@@ -1,0 +1,5 @@
+{{#each message in model}}
+  <li> {{#link-to 'message' message.id}}{{message.question}}: Author: {{message.author}}{{/link-to}} </li>
+{{/each}}
+
+{{outlet}}
