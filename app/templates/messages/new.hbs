@@ -1,6 +1,8 @@
 <div class="new-msg-form">
   {{input type="text" placeholder="Question" value=question class="question-input"}}
-  {{input type="text" placeholder="Author" value=author class="author-input"}}
+  <br>
+  {{input type="text" placeholder="Author" value=author class="author-input"}} <hr>
   {{textarea rows="8" cols="40" placeholder="Body" value=body class="body-input"}}
-  <button {{action 'addMessage'}} class="submit">Submit</button>
+  <br>
+    <button {{action 'addMessage'}} class="submit">Submit</button>
 </div>

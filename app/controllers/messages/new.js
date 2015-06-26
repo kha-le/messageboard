@@ -14,6 +14,7 @@ export default Ember.Controller.extend({
         author:'',
         body:''
       });
+      this.transitionToRoute("messages");
     }
   }
 });
